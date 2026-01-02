@@ -2,7 +2,7 @@
 #include <iostream>
 
 void addStudent(Student students[], int &count) {
-    cout << "Wnter student name: ";
+    cout << "Enter student name: ";
     cin >> students[count].name;
     cout << "Enter a grade: ";
     cin >> students[count].grade;
