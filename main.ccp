@@ -16,3 +16,25 @@ int main() {
          cout << "\n0. Exit";
          cout << "\nChoice: ";
          cin >> choice;
+
+ switch (choice) {
+            case 1:
+                addStudent(students, count);
+                break;
+            case 2:
+                showStudents(students, count);
+                break;
+            case 3:
+                cout << "Average Note: "
+                     << calculateAverage(students, count) << endl;
+                break;
+            case 0:
+                cout << "Exit from program.";
+                break;
+            default:
+                cout << "Wrong choice";
+        }
+    } while (choice != 0);
+
+    return 0;
+}
